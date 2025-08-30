@@ -3,3 +3,5 @@ WORKDIR /app
 COPY target/springbootApp.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
+
+
