@@ -1,3 +1,5 @@
-FROM lolhens/baseimage-openjre
-ADD target/springbootApp.jar springbootApp.jar
-ENTRYPOINT ["java", "-jar", "springbootApp.jar"]
+FROM openjdk:17-jdk-slim
+WORKDIR /app
+COPY target/springbootApp.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
+
