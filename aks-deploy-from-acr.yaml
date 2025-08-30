@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: panneerdasacr.azurecr.io/panneerdasgit/javaapp1:#{Build.BuildId}#
+        image: panneerdasacr.azurecr.io/panneerdasgit/javaapp1:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
